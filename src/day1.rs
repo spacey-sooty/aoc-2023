@@ -1,4 +1,4 @@
-pub fn execute() {
+pub fn execute1() {
     let path = std::env::args().nth(1).unwrap();
     let contents = std::fs::read_to_string(&path).unwrap();
     let mut tmp_num: Vec<u8> = Vec::new();
@@ -59,4 +59,8 @@ pub fn execute() {
     }
 
     println!("{}", result)
+}
+
+pub fn execute2() {
+
 }
